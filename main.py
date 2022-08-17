@@ -5,7 +5,6 @@ Written by: Daniel Woodson
 Enter start and finish numbers and this will create a pdf with "BM" pallet numbers in that range
 """
 from fpdf import FPDF
-import os
 import tkinter as tk
 from tkinter import filedialog
 
@@ -71,10 +70,9 @@ if __name__ == '__main__':
     file_location_entry.grid(row=n, columnspan=2, sticky='w')
     n += 1
 
-    tk.Button(frame, text="Select Folder", command=get_dir).grid(row=n, sticky='w')
+    tk.Button(frame, text="Select Folder", command=get_dir).grid(row=n, sticky='w', pady=3)
     n += 1
 
-    root.update_idletasks()
-    tk.Button(frame, text="Create PDF", command=create_pdf).grid(row=n, sticky='w')
+    tk.Button(frame, text="Create PDF", command=create_pdf).grid(row=n, sticky='w', pady=3)
 
     root.mainloop()
