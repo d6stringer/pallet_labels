@@ -1,6 +1,6 @@
 # pallet_labels
  
-Operations was having spending a lot of time manually editing and printing pallet lables.
+Operations was spending a lot of time manually editing and printing pallet lables.
 This gui/script makes it easy to print a series of lables with acending numberic order, 
 two labels at a time. 
 
